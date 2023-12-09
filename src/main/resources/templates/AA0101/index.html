@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>メニュー画面</title>
+</head>
+<body>
+    <h1>メニュー画面</h1>
+    <p>
+        <a th:href="@{/logout}" href="">ログアウト</a>
+    </p>
+
+    itemマスタ管理
+    <ul>
+        <li><a th:href="@{/WBA0101/index}" href="../BA0101/regist.html">item登録画面</a></li>
+        <li><a th:href="@{/WBA0201/index}" href="../BA0201/search.html">item照会画面</a></li>
+
+    </ul>
+    
+</body>
+</html>
