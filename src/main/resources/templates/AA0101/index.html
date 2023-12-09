@@ -14,7 +14,9 @@
     <ul>
         <li><a th:href="@{/WBA0101/index}" href="../BA0101/regist.html">item登録画面</a></li>
         <li><a th:href="@{/WBA0201/index}" href="../BA0201/search.html">item照会画面</a></li>
-
+        <th:block sec:authorize="hasRole('DATA_MANAGER')">
+            <li><a th:href="@{/WBA0401/index}" href="../BA0401/delete.html">item削除画面</a></li>
+        </th:block>
     </ul>
     
 </body>

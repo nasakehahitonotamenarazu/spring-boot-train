@@ -22,7 +22,9 @@ public class WebSecurityConfig {
         ).logout(logout -> logout
             .logoutSuccessUrl("/login")
         ).authorizeHttpRequests(authz -> authz
-            // その他は認証する
+            // item更新画面とitem削除画面はDATA_MANAGERロールを保持しているユーザのみアクセス可能
+            .requestMatchers("/WBA0401/**", "/WBA0501/**").hasRole("DATA_MANAGER")
+            // その他画面は認証済みが必須
             .anyRequest().authenticated()
         );
         return http.build();
