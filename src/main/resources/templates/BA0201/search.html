@@ -38,7 +38,7 @@
             <div style="display: inline-block;width: 100px;">
                 <span th:text="${item.price}">100円</span>円
             </div>
-            <th:block sec:authorize-url="/WBA0501">
+            <th:block sec:authorize="hasRole('DATA_MANAGER')">
                 <a th:href="@{/WBA0501/index(id=${item.id})}" href="../BA0501/update.html">更新</a>
             </th:block>
         </li>

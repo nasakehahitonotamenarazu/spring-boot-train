@@ -24,29 +24,16 @@ public class WebSecurityConfig {
         ).authorizeHttpRequests(authz -> authz
             // item更新画面とitem削除画面はDATA_MANAGERロールを保持しているユーザのみアクセス可能
             .requestMatchers("/WBA0401/**", "/WBA0501/**").hasRole("DATA_MANAGER")
+            .requestMatchers("/h2-console/**").permitAll()
             // その他画面は認証済みが必須
             .anyRequest().authenticated()
+        // 開発向け、h2DBコンソール向け設定
+        ).csrf(csrf -> csrf
+            .ignoringRequestMatchers("/h2-console/**")
+        ).headers(headers -> headers
+            .frameOptions(frameOptions -> frameOptions
+                .sameOrigin())
         );
         return http.build();
-
-        // 参考：以下、spring security5.7の設定
-        // http
-        //         .authorizeRequests()
-        //         // 開発向け、h2DBコンソールは認証しない
-        //         .mvcMatchers("/h2-console/**").permitAll()
-        //         // ヘルスチェックURLは認証しない
-        //         .mvcMatchers("/actuator/health").permitAll()
-        //         // item更新画面とitem削除画面はDATA_MANAGERロールを保持しているユーザのみアクセス可能
-        //         .mvcMatchers("/WBA0401/**", "/WBA0501/**").hasRole("DATA_MANAGER")
-        //         // その他は認証する
-        //         .anyRequest().authenticated()
-        //         // ログイン
-        //         .and().formLogin().defaultSuccessUrl("/", true)
-        //         // ログアウト
-        //         .and().logout((logout) -> logout.permitAll())
-        //         // 開発向け、h2DBコンソール向け設定
-        //         .csrf().ignoringAntMatchers("/h2-console/**")
-        //         .and().headers().frameOptions().sameOrigin();
-        // return http.build();
     }
 }
