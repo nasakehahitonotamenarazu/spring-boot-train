@@ -398,11 +398,11 @@ https://start.spring.io/
 > * Dockerコンテナイメージとしてビルドして、コンテナ起動
 > * Terraformを使って、クラウド環境の自動構築及びデプロイ自動化
 > 
-> 次にAWSへのデプロイを学ぼう
-> https://github.com/namickey/vpc-ec2-try
+> 次にAWSへのデプロイを学ぼう  
+> https://github.com/namickey/vpc-ec2-try  
 > 
-> 次にGitHubからAWSへの自動デプロイを学ぼう
-> https://github.com/namickey/spring-boot2-aws-terraform
+> 次にGitHubからAWSへの自動デプロイを学ぼう  
+> https://github.com/namickey/spring-boot2-aws-terraform  
 
 > [!NOTE]
 > ## NEXT システム構成及びアプリケーション構成について学ぼう
@@ -429,17 +429,17 @@ https://start.spring.io/
 > [!TIP]
 > ## 読みもの
 >
-> プログラミングというより物事が出来るようになる思考法
-> https://note.com/simplearchitect/n/n388201603a28
+> プログラミングというより物事が出来るようになる思考法  
+> https://note.com/simplearchitect/n/n388201603a28  
 >
-> プログラミングというより物事が出来る思考法～実践編
-> https://note.com/simplearchitect/n/nbecdf4a687c0
+> プログラミングというより物事が出来る思考法～実践編  
+> https://note.com/simplearchitect/n/nbecdf4a687c0  
 >
-> 「何をやっても駄目だった」ポンコツの自分を救ってくれたマインドセット
-> https://simplearchitect.hatenablog.com/entry/2023/12/11/075257
+> 「何をやっても駄目だった」ポンコツの自分を救ってくれたマインドセット  
+> https://simplearchitect.hatenablog.com/entry/2023/12/11/075257  
 >
 > 【11万文字越え】プログラミング初心者に贈る即戦力ガイド  
 > https://qiita.com/nuco_bk/items/27f5ad03d0c4b41241fc  
 >
-> そこそこ最新の決済の世界へようこそ2023！
-> https://blog.kyash.co/entry/2023/12/02/062232
+> そこそこ最新の決済の世界へようこそ2023！  
+> https://blog.kyash.co/entry/2023/12/02/062232  
