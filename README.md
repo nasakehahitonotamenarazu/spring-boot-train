@@ -1,10 +1,10 @@
 # spring-boot3-train
 
-Spring-Bootで、がっちり業務アプリケーション開発
+Spring-Bootで、がっちり業務アプリケーションを開発しよう
 
 ## やりたいこと
 
-* マスタ管理を行うWEBの業務アプリケーションをがっちりと作る
+* マスタ管理を行うWEBの業務アプリケーションをがっちり作る
 * クラスやパッケージ等の命名はIDを使用する。`大規模案件ではID管理が必須`
 * アプリケーション共通機能（認証、認可、エラー処理、コード管理）を作る。`業務アプリケーションには必須`
 * 画面はThymeleafのHTMLテンプレートを使用することで、Tomcat起動を行わなくても、直接HTMLファイルを開けば画面モックとしてレイアウト確認ができる。`JSPよりもThymeleaf`
@@ -15,7 +15,7 @@ Spring-Bootで、がっちり業務アプリケーション開発
 
 ## 前提
 
-できれば、以下の初級編を先に動かしていること  
+以下の初級編を先に動かすべし  
 https://github.com/namickey/spring-boot3-try  
 
 ### 登録機能について
@@ -317,8 +317,11 @@ https://start.spring.io/
 2. 統合開発環境を使って、今動かしたソースコードと同じものを実装し、動作確認する
 3. 自分のgithubアカウントを作って、作ったソースを公開しよう
 4. githubでgitフローを使って開発しよう
-5. 未実装機能の実装にチャレンジしよう
-6. 分からないことはGitHub Copilotに書いてもらおう。AI補助を体験しよう
+5. 画面遷移を変えてみよう  
+   例えば、詳細画面に削除ボタンを配置する等
+6. 未実装機能の実装にチャレンジしよう
+7. 分からないことはGitHub Copilotに書いてもらおう  
+   AI補助を体験しよう
 
 ## アプリケーション共通機能について
 
@@ -402,7 +405,7 @@ https://start.spring.io/
 > https://github.com/namickey/spring-boot2-aws-terraform
 
 > [!NOTE]
-> ## システム構成及びアプリケーション構成について学ぼう
+> ## NEXT システム構成及びアプリケーション構成について学ぼう
 > https://github.com/namickey/spring-boot2-system  
 
 > [!NOTE]
@@ -422,6 +425,21 @@ https://start.spring.io/
 > 
 > JUnit5におけるMockitoの利用方法  
 > https://qiita.com/kirin1218/items/37ed388759a4c7d94b75  
-> 
+
+> [!TIP]
+> ## 読みもの
+>
+> プログラミングというより物事が出来るようになる思考法
+> https://note.com/simplearchitect/n/n388201603a28
+>
+> プログラミングというより物事が出来る思考法～実践編
+> https://note.com/simplearchitect/n/nbecdf4a687c0
+>
+> 「何をやっても駄目だった」ポンコツの自分を救ってくれたマインドセット
+> https://simplearchitect.hatenablog.com/entry/2023/12/11/075257
+>
 > 【11万文字越え】プログラミング初心者に贈る即戦力ガイド  
 > https://qiita.com/nuco_bk/items/27f5ad03d0c4b41241fc  
+>
+> そこそこ最新の決済の世界へようこそ2023！
+> https://blog.kyash.co/entry/2023/12/02/062232
