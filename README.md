@@ -425,6 +425,9 @@ https://start.spring.io/
 > 
 > JUnit5におけるMockitoの利用方法  
 > https://qiita.com/kirin1218/items/37ed388759a4c7d94b75  
+> 
+> Streamとは？古いJavaでも新しく書こう～  
+> https://qiita.com/jwx0316/items/b064d7a7a05134deaea8  
 
 > [!TIP]
 > ## 読みもの
