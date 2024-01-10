@@ -446,3 +446,7 @@ https://start.spring.io/
 >
 > そこそこ最新の決済の世界へようこそ2023！  
 > https://blog.kyash.co/entry/2023/12/02/062232  
+>
+> 【バックエンド】駆け出しエンジニアが目指すジュニアレベルのエンジニアとは【2024年版】  
+> https://qiita.com/mamimami0709/items/fd6556707e4b924c65ab  
+
