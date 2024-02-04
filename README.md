@@ -314,13 +314,20 @@ Ctrl + C
 1. `Spring Initializr`から初期構成のアプリケーションをダウンロードする  
 https://start.spring.io/
 ![initializr](initializr.png)
-2. 統合開発環境を使って、今動かしたソースコードと同じものを実装し、動作確認する
-3. 自分のgithubアカウントを作って、作ったソースを公開しよう
-4. githubでgitフローを使って開発しよう
-5. 画面遷移を変えてみよう  
+2. mavenのpom.xmlに不足している依存を追加する
+```xml
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
+		</dependency>
+```
+3. 統合開発環境を使って、今動かしたソースコードと同じものを実装し、動作確認する
+4. 自分のgithubアカウントを作って、作ったソースを公開しよう
+5. githubでgitフローを使って開発しよう
+6. 画面遷移を変えてみよう  
    例えば、詳細画面に削除ボタンを配置する等
-6. 未実装機能の実装にチャレンジしよう
-7. 分からないことはGitHub Copilotに書いてもらおう  
+7. 未実装機能の実装にチャレンジしよう
+8. 分からないことはGitHub Copilotに書いてもらおう  
    AI補助を体験しよう
 
 ## アプリケーション共通機能について
