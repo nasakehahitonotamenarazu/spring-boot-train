@@ -4,14 +4,12 @@
     <!-- 登録 -->
     <insert id="insertItem">
         insert into item(
-            id,
             item_name,
             price,
             groupid,
             regist_date,
             version_no
         ) values(
-            #{id},
             #{itemName},
             #{price},
             #{groupid},

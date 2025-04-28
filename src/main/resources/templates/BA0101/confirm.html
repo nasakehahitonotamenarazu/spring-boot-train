@@ -10,11 +10,6 @@
 
     <form method="POST" th:action="@{regist}" action="./complete.html" th:object="${itemForm}">
         <div>
-            <span style="display: inline-block;width: 100px;">ID</span>
-            <span th:text="*{id}" >1</span>
-        </div>
-
-        <div>
             <span style="display: inline-block;width: 100px;">ITEM NAME</span>
             <span th:text="*{itemName}" >ノート</span>
         </div>
@@ -34,7 +29,6 @@
             <span th:text="*{#temporals.format(registDate, 'uuuu/MM/dd')}">2023/06/01/</span>
         </div>
 
-        <input type="hidden" th:field="*{id}" />
         <input type="hidden" th:field="*{itemName}" />
         <input type="hidden" th:field="*{price}" />
         <input type="hidden" th:field="*{groupid}" />

@@ -39,7 +39,6 @@ public class BA0101Controller {
     public String index(ItemForm itemForm) {
 
         // 開発用。ダミーデータを初期表示する
-        itemForm.setId(13);
         itemForm.setItemName("ペン");
         itemForm.setPrice(1000);
         itemForm.setGroupid("CD-A01");

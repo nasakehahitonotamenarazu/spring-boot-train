@@ -10,11 +10,6 @@
     
     <form method="POST" th:action="@{confirm}" action="./confirm.html" th:object="${itemForm}">
         <div th:if="${#fields.hasGlobalErrors()}" th:errors="*{global}"></div>
-        <div>
-            <span style="display: inline-block;width: 100px;">ID</span>
-            <input type="text" th:field="*{id}" value="1" />
-            <div th:if="${#fields.hasErrors('id')}" th:errors="*{id}" />
-        </div>
 
         <div>
             <span style="display: inline-block;width: 100px;">ITEM NAME</span>

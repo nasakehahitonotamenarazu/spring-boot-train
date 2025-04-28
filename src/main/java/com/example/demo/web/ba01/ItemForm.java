@@ -4,14 +4,12 @@ import java.time.LocalDate;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
-import org.springframework.beans.BeanUtils;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.example.demo.common.code.ItemGroup;
 import com.example.demo.entity.Item;
 
 import jakarta.validation.constraints.AssertTrue;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -28,8 +26,8 @@ public class ItemForm {
      * ID
      * 必須チェック
      */
-    @NotNull
-    private Integer id;
+    // @NotNull
+    // private Integer id;
 
     /**
      * itemName
@@ -78,10 +76,13 @@ public class ItemForm {
      * @return Item
      */
     public Item toItem() {
-        // ItemFormからItemエンティティへデータコピー
-        // 同じ名称のフィールドは自動的にコピーしてくれる。
-        Item item = new Item();
-        BeanUtils.copyProperties(this, item);
-        return item;
+        return new Item(
+            null, // IDは設定しない
+            this.itemName,
+            this.price,
+            this.groupid,
+            this.registDate,
+            null // versionNoも設定しない
+        );
     }
 }
